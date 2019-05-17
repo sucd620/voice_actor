@@ -1,0 +1,28 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#top{
+    height:100vh;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+table{
+    font-size: 13px;
+}
+
+.list-unstyled{
+    font-size: 14px;
+}
+
+.light{
+    filter: brightness(50%);
+}
+
+.vegascontainer{
+    z-index: 1;
+}
