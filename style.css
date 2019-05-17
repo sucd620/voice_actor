@@ -22,7 +22,3 @@ table{
 .light{
     filter: brightness(50%);
 }
-
-.vegascontainer{
-    z-index: 1;
-}

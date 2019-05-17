@@ -16,27 +16,19 @@
     <link href="bootstrap.css" rel="stylesheet">
 
     <script type="text/javascript" src="bootstrap.js"></script>
-    <script type="text/javascript" src="vegas.js"></script>
+    <script type="text/javascript" src="jquery.bgswitcher.js"></script>
+
+    <script>
+      jQuery(function($) {
+        $('.bg-slider').bgSwitcher({
+          images: ['top1.jpg','photo.png'], // 切り替える背景画像を指定
+        });
+      });
+    </script>
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
-
-    <link href="vegas.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
-    <script>
-$(function(){  
-  $('body').vegas({
-    slides: [
-     { src: 'top1.jpg' },
-     { src: 'photo.png' }
-    ],
-     delay: 7000,
-     timer: false,
-     transitionDuration: 3000
-  });
-});
-    </script>
 
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
@@ -56,7 +48,7 @@ $(function(){
           </button>
         </div>
       </div>
-      <div class="collapse bg-dark sticky-top navbar-fixed-top" id="navbarHeader">
+      <div class="collapse bg-dark sticky-top navbar-fixed-top fixed-top" id="navbarHeader">
         <div class="container vh-100">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
@@ -125,9 +117,9 @@ $(function(){
       </div>
     </header>
 
-    <div id="main">
+    <main role="main">
         <div id=top>
-      <section class="jumbotron text-center h-100 d-flex align-items-center">
+      <section class="jumbotron text-center h-100 d-flex align-items-center bg-slider">
         <div class="container">
           <h1 class="jumbotron-heading text-light">サクシード株式会社</h1>
           <p class="lead text-light">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
@@ -197,8 +189,8 @@ $(function(){
                       <td>神奈川県</td>
                       </tr>
                       <tr><th></th><td></td></tr>
-                  </table>
-                </div>
+                      </table>
+                      </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
             </div><!-- /.modal-footer -->
@@ -331,7 +323,6 @@ $(function(){
           </div>
         </div>
       </div>
-
       
       <!-- 切り替えボタンの設定 -->
       <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">ココを押すと表示</button>-->
@@ -367,8 +358,5 @@ $(function(){
         
       </div>
     </footer>
-
-    </div>
-
   </body>
 </html>
